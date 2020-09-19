@@ -57,6 +57,8 @@ export class QuantityTypeComponent implements OnInit {
       this.temperature=false;
       this.volume=false;
       this.lengthChange=true;
+      this.temperatureChange=false;
+      this.volumeChange=false;
     }
     else{
       this.onLengths='card';
@@ -73,6 +75,8 @@ export class QuantityTypeComponent implements OnInit {
       this.length=false;
       this.volume=false;
       this.temperatureChange = true;
+      this.lengthChange=false;
+      this.volumeChange=false;
     }
     else{
       this.onTemperatures='card';
@@ -89,6 +93,8 @@ export class QuantityTypeComponent implements OnInit {
       this.length = false;
       this.temperature = false;
       this.volumeChange = true;
+      this.lengthChange=false;
+      this.temperatureChange=false;
     }
     else{
       this.onVolumes='card';

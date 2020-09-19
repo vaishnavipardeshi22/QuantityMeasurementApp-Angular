@@ -3,7 +3,7 @@
         <p class="chooseType">Choose Type</p>
     </div>
 
-    <div fxLayout-xs="row" fxLayoutAlign="space-around center" fxLayout="2.19vw" class="cards">
+    <div fxLayout-xs="row" fxLayoutAlign="center center" fxLayoutGap=2.92vw class="cards">
         <mat-card (mouseover)="length = true" (mouseout)="lengthOut()" class="lengthCard card" [ngClass]="[onLengths]" (click)="onLength()">
             <img [src]=" length === true ? 'assets/lengthEnable.png' : 'assets/lengthDisable.png'" id="lengthImage">
             <p class="lengthText">Length</p>
@@ -17,6 +17,6 @@
         <mat-card (mouseover)="volume = true" (mouseout)="volumeOut()" class="volumeCard card" [ngClass]="[onVolumes]" (click)="onVolume()">
             <img [src]=" volume === true ? 'assets/volumeEnable.png' : 'assets/volumeDisable.png'" id="volumeImage">
             <p id="volumeText">Volume</p>
-        </mat-card>>
+        </mat-card>
     </div>
 </div>

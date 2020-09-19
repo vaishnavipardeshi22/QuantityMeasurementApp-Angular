@@ -9,13 +9,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { HeaderComponent } from './component/header/header.component';
 import { QuantityTypeComponent } from './component/quantity-type/quantity-type.component';
 import {MatCardModule} from '@angular/material/card';
+import { QuantityConversionComponent } from './component/quantity-conversion/quantity-conversion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    QuantityTypeComponent
+    QuantityTypeComponent,
+    QuantityConversionComponent
   ],
   imports: [
     BrowserModule,
