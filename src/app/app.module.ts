@@ -8,8 +8,10 @@ import { HomeComponent } from './component/home/home.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HeaderComponent } from './component/header/header.component';
 import { QuantityTypeComponent } from './component/quantity-type/quantity-type.component';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 import { QuantityConversionComponent } from './component/quantity-conversion/quantity-conversion.component';
+import { HttpService } from './services/httpService/http.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,9 +26,10 @@ import { QuantityConversionComponent } from './component/quantity-conversion/qua
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
