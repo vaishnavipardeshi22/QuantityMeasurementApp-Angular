@@ -9,6 +9,10 @@ export class QuantityTypeComponent implements OnInit {
 
   constructor() { }
 
+  quantityUnit = [];
+  input = 0;
+  output = 0;
+
   length:boolean = false;
   temperature:boolean = false;
   volume:boolean = false;
@@ -59,6 +63,9 @@ export class QuantityTypeComponent implements OnInit {
       this.lengthChange=true;
       this.temperatureChange=false;
       this.volumeChange=false;
+      this.quantityUnit=['Foot', 'Kilometer', 'Meter', 'Millimeter', 'Inch'];
+      this.input=1;
+      this.output=12;
     }
     else{
       this.onLengths='card';
@@ -77,6 +84,9 @@ export class QuantityTypeComponent implements OnInit {
       this.temperatureChange = true;
       this.lengthChange=false;
       this.volumeChange=false;
+      this.quantityUnit=['Celsius', 'Fahrenheit'];
+      this.input=0;
+      this.output=32;
     }
     else{
       this.onTemperatures='card';
@@ -95,6 +105,9 @@ export class QuantityTypeComponent implements OnInit {
       this.volumeChange = true;
       this.lengthChange=false;
       this.temperatureChange=false;
+      this.quantityUnit=['Litre', 'Millilitre', 'Gallon'];
+      this.input=1;
+      this.output=1000;
     }
     else{
       this.onVolumes='card';

@@ -1,14 +1,20 @@
 <div fxLayout-xs="row" fxLayoutAlign="start center" class="conversion">
     <div fxLayout-xs="column" >
         <p class="from">From</p>
-        <input type="number" value="1" class="input"/>
-        <select matNativeControl required class="select">
-        </select>
+        <input type="number" [value]="input" class="input"/>
+            <select matNativeControl required class="select">
+                <option *ngFor="let quantityUnit of quantityUnit"> 
+                    {{ quantityUnit }}
+                </option>
+            </select>
     </div>
     <div fxLayout-xs="column" class="layout">
         <p class="to">To</p>
-        <input type="number" value="100" class="input"/>
-        <select matNativeControl required class="select">
-        </select>
+        <input type="number" [value]="output" class="input"/>
+            <select matNativeControl required class="select">
+                <option *ngFor="let quantityUnit of quantityUnit" [selected] = " i == 1">
+                    {{ quantityUnit }}
+                </option>
+            </select>
     </div>
 </div>
